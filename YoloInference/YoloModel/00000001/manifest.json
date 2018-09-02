@@ -1,0 +1,37 @@
+{
+  "dependencies": [],
+  "description": "",
+  "location": "",
+  "name": "YoloModel",
+  "params": {
+    "model": {
+      "frameworkVersion": "WinMLTools0.1.0.5072",
+      "graphVersion": 0,
+      "interfaces": [
+        {
+          "inputs": [
+            {
+              "description": "Input image. Image(s) in RGB format. It is a [N, C, H, W]-tensor. The 1st/2nd/3rd slices along theC-axis are red, green, and blue channels, respectively.",
+              "internalName": "image",
+              "name": "input0",
+              "shape": "[None, 3, 416, 416]",
+              "type": "DATA_TYPE_FLOAT"
+            }
+          ],
+          "name": "Evaluate",
+          "outputs": [
+            {
+              "description": "The 13x13 grid with the bounding box data",
+              "internalName": "grid",
+              "name": "output0",
+              "shape": "[None, 125, 13, 13]",
+              "type": "DATA_TYPE_FLOAT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "typeName": "OnnxModel",
+  "version": 1
+}

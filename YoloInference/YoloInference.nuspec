@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>YoloInference</id>
+    <version>1.0.0</version>
+    <authors>rodri</authors>
+    <description>
+YoloInference.1.0.0
+    </description>
+    <dependencies>
+      <dependency id="Microsoft.ML.Scoring" version="1.0.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="YoloModel\00000001\manifest.json" target="lib\content\YoloModel\00000001\manifest.json" />
+    <file src="YoloModel\00000001\TinyYOLO.onnx" target="lib\content\YoloModel\00000001\TinyYOLO.onnx" />
+    <file src="bin\x64\Debug\YoloInference.dll" target="lib\net46" />
+    <file src="YoloInference.targets" target="build" />
+  </files>
+</package>

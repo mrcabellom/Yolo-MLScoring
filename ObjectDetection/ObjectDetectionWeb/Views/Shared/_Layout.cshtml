@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MsCoders</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <img width="400" src="~/Content/Images/backgroundMscoders.jpeg" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav title-header">
+                    <li>Deep Learning para desarrolladores C#</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Deep Learning Yolo C# App</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

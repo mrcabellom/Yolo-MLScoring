@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "DotNet Home";
+}
+
+<div class="row">
+    <div class="main-panel">
+        <div class="description">
+            <p class="lead">Deep Learning Yolo ONNX model</p>
+            <p>
+                Select an image to obtain the bounding boxes of the objects matches.
+            </p>
+            <input id="fileUpload" type="file" />
+        </div>
+        <div class="detect-panel">
+            <p><a href="#" class="btn btn-primary btn-lg score">Detect Objects! &raquo;</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <img id="orgimg" style="display:none;" class="preview" src="" height="416" width="416" alt="Image preview...">
+    </div>
+    <div class="col-md-5">
+        <canvas id="myCanvas" width="416" height="416"></canvas>
+    </div>
+    <div class="col-md-2 confidence-objects" style="display:none;">
+        <h4>Confidence Results</h4>
+        <div class="confidences">
+        </div>
+    </div>
+</div>
