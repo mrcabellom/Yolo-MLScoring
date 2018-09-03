@@ -40,4 +40,10 @@ To run the web application it is necessary to add the following DLL's to the PAT
 - OpenCvSharpExtern
 - tensorflow
 
+You must to add the following Nuget origin to use the new Tensor class:
+
+- https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json
+- https://dotnet.myget.org/F/dotnet-corefxlab/api/v3/index.json
+- https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+
 To test the application you can use some sample images of the SampleImages folder.
