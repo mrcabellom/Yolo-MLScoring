@@ -2,7 +2,7 @@
 
 ## Description
 
-Web application developed with ASP .Net Framework 4.6 that detect objects of an uploaded image using the YOLO v2 ONNX model and the [ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) C# managed library for deep learning model inferencing that optimizes the ONNX/Tensorflow model for serving. The application also uses the OpenCVSharp to load the image and convert it to a Tensor ([Using the new Tensor class of System.Numerics](https://blogs.msdn.microsoft.com/dotnet/2017/11/15/introducing-tensor-for-multi-dimensional-machine-learning-and-ai-data/)) object to do some reshape operations in order to pass the correct dimensions to the model.
+Web application developed with ASP .Net Framework 4.6 that detect objects of an uploaded image using the ([YOLO v2 ONNX model])(https://github.com/onnx/models/tree/master/tiny_yolov2) and the [ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) C# managed library for deep learning model inferencing that optimizes the ONNX/Tensorflow model for serving. The application also uses the OpenCVSharp to load the image and convert it to a Tensor ([Using the new Tensor class of System.Numerics](https://blogs.msdn.microsoft.com/dotnet/2017/11/15/introducing-tensor-for-multi-dimensional-machine-learning-and-ai-data/)) object to do some reshape operations in order to pass the correct dimensions to the model.
 
 ![alt text](imageapp.png "Image Application")
 
